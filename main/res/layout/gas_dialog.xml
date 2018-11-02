@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project Licensed under the 
+	Apache License, Version 2.0 (the "License"); you may not use this file except 
+	in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+	Unless required by applicable law or agreed to in writing, software distributed 
+	under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
+	OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
+	the specific language governing permissions and limitations under the License. -->
+
+<!-- Demonstrates use of the com.google.android.maps.MapView. See corresponding 
+	Java code com.example.android.apis.view.MapViewDemo.java. -->
+
+
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+android:layout_width="fill_parent" 
+android:id="@+id/Scroll0001" 
+android:layout_height="fill_parent" 
+android:orientation="vertical">
+
+<LinearLayout  
+android:layout_width="fill_parent" 
+android:id="@+id/LinearLayout01" 
+android:layout_height="fill_parent" 
+android:orientation="vertical" >
+
+
+
+<!-- N2 -->
+	
+<LinearLayout android:id="@+id/GasDialogN2Layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+<TextView android:id="@+id/GasDialogN2Label" 
+		style="@style/Label"
+		android:text="@string/gas_dialog_n2_label" android:textSize="10dip"/>
+	<ProgressBar android:id="@+id/GasDialogN2" 
+		android:layout_width="fill_parent"
+	 	android:layout_height="wrap_content"
+	 	android:progressDrawable="@android:drawable/progress_horizontal"
+		android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+		android:indeterminateOnly="false"
+		android:progress="79"
+		android:max="100"
+		android:height="20dip"
+		android:minHeight="10dip"
+		android:maxHeight="10dip" 
+		android:layout_weight="1"
+	 	android:minWidth="150dip"/>
+	<TextView android:id="@+id/GasDialogN2Result"
+	 	style="@style/GasDialogResult"
+	   	android:text="79 %" android:textSize="10dip"/>
+</LinearLayout>
+
+
+<!-- He2 -->
+<TextView android:id="@+id/GasDialogHe2Lafbel" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="@string/gas_dialog_he2_label"
+		 style="@style/Label" />
+<LinearLayout android:id="@+id/GasDialogHe2Layout" 
+android:layout_width="fill_parent" 
+ android:layout_height="wrap_content">
+ <TextView android:id="@+id/GasDialogHe2Result"
+	 	style="@style/GasDialogResult"
+	   	android:text="0 %"/>
+	<Button android:id="@+id/GasDialogHe2minus" 
+		android:text="-" 
+		style="@style/GasDialogPlusMinusButton"/>
+	<SeekBar android:id="@+id/GasDialogHe2" 
+		android:layout_width="fill_parent"
+	 	android:layout_height="wrap_content"
+	 	android:layout_gravity="center"
+	 	android:max="100"
+	 	android:progress="0"
+	 	android:minWidth="150dip" android:layout_weight="1"/>
+	<Button android:id="@+id/GasDialogHe2plus" 
+		android:text="+" 
+		style="@style/GasDialogPlusMinusButton"/>
+
+</LinearLayout>
+
+
+<!-- O2 -->
+	<TextView android:id="@+id/GasDialogO2Label" 
+		android:text="@string/gas_dialog_o2_label"
+		style="@style/Label"/>
+<LinearLayout android:id="@+id/GasDialogO2Layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+<TextView android:id="@+id/GasDialogO2Result"
+		style="@style/GasDialogResult"
+	   	android:text="21 %"/>
+		<Button android:id="@+id/GasDialogO2minus" 
+		android:text="-" 
+		style="@style/GasDialogPlusMinusButton"/>
+	<SeekBar android:id="@+id/GasDialogO2" 
+		android:layout_width="fill_parent"
+	 	android:layout_height="wrap_content"
+	 	android:progress="21"
+	 	android:max="100"
+	 	android:layout_gravity="center"
+	 	android:layout_weight="1"
+	 	android:minWidth="150dip"/>
+	 	<Button android:id="@+id/GasDialogO2plus" 
+		android:text="+" 
+		style="@style/GasDialogPlusMinusButton"/>
+	
+</LinearLayout>
+
+
+
+<!-- ppO2 -->
+	<TextView android:id="@+id/GasDialogppO2Label" 
+		style="@style/Label"
+		android:text="@string/gas_dialog_ppo2_label"/>
+<LinearLayout android:id="@+id/GasDialogppO2Layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<TextView android:id="@+id/GasDialogppO2Result"
+	 	style="@style/GasDialogResult"
+	   	android:text="21 %"/>
+		<Button android:id="@+id/GasDialogppO2minus" 
+		android:text="-" 
+		style="@style/GasDialogPlusMinusButton"
+		/>
+	<SeekBar android:id="@+id/GasDialogppO2" 
+		android:layout_width="fill_parent"
+	 	android:layout_height="wrap_content"
+	 	android:progress="21"
+	 	android:max="80"
+	 	android:layout_gravity="center"
+	 	android:layout_weight="1"
+	 	android:minWidth="150dip"/>
+	 	<Button android:id="@+id/GasDialogppO2plus" 
+		android:text="+" 
+		style="@style/GasDialogPlusMinusButton"/>
+
+</LinearLayout>
+
+<LinearLayout android:id="@+id/GasDialogcontrollLayout" 
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content"
+android:layout_marginLeft="20dip"
+android:layout_marginRight="20dip"
+>
+		
+		<Button android:id="@+id/GasDialogCancel" 
+		android:text="Cancel" 
+		android:layout_gravity="right"
+		android:layout_weight="1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+		
+	 	<Button android:id="@+id/GasDialogOk" 
+		android:text="Ok" 
+		android:layout_weight="1"
+		android:layout_gravity="right"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

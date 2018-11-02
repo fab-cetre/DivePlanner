@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar" />
+    <style name="Label" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#6E78E6</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:minWidth">45dip</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">5dip</item>
+        
+    </style>
+     <style name="GasDialogResult" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#9AE66E</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:minWidth">45dip</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">5dip</item>
+    </style>
+     <style name="GasDialogPlusMinusButton" >
+        <item name="android:maxWidth">40dip</item>
+        <item name="android:minWidth">40dip</item>
+        <item name="android:maxHeight">40dip</item>
+        <item name="android:minHeight">40dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>
+
+

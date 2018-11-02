@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout android:orientation="vertical" android:background="#00cacaca"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:background="#00cacaca">
+		<TextView android:id="@+id/divelabel_date" android:background="#00cacaca" android:textColor="#0000ff"
+			android:textSize="20sp" android:layout_width="wrap_content"
+			android:text="t1" android:layout_height="fill_parent"></TextView>
+	</LinearLayout>
+	
+	<TableLayout android:id="@+id/TableLayout01" android:background="#00cacaca"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+	
+	<TableRow android:id="@+id/TableRow01" android:background="#00cacaca" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<LinearLayout android:layout_width="wrap_content" android:background="#00cacaca"
+		android:layout_height="wrap_content">
+		
+		<ImageView android:layout_width="wrap_content" android:background="#00cacaca" android:layout_height="wrap_content" android:src="@drawable/depth"></ImageView>
+		<TextView android:id="@+id/divelabel_depth" android:background="#00cacaca" android:textSize="18sp" android:width="30px" 
+	android:layout_marginLeft="2px"		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	
+</LinearLayout>
+	<LinearLayout android:background="#00cacaca" android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<ImageView android:layout_width="wrap_content" android:background="#00cacaca"
+			android:layout_height="wrap_content" android:src="@drawable/duration"></ImageView>
+		<TextView android:id="@+id/divelabel_duration" android:background="#00cacaca" android:textSize="18sp" android:width="30px" android:layout_marginLeft="2px"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	</LinearLayout>
+	<LinearLayout android:background="#00cacaca" android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<ImageView android:layout_width="wrap_content" android:background="#00cacaca"
+			android:layout_height="wrap_content" android:src="@drawable/temperature"></ImageView>
+		<TextView android:id="@+id/divelabel_temperature" android:background="#00cacaca" android:textSize="18sp" android:width="30px" android:layout_marginLeft="2px"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	</LinearLayout>
+	<LinearLayout android:layout_width="wrap_content" android:background="#00cacaca"
+		android:layout_height="wrap_content">
+		<ImageView android:layout_width="wrap_content" android:background="#00cacaca"
+			android:layout_height="wrap_content" android:src="@drawable/notes" android:layout_marginLeft="5px"></ImageView>
+		<TextView android:id="@+id/divelabel_notes" android:background="#00cacaca" android:layout_marginLeft="5px"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"></TextView>
+	</LinearLayout>
+	</TableRow>
+</TableLayout>
+</LinearLayout>

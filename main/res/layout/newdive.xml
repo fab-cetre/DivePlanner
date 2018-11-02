@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:orientation="vertical">
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="vertical">
+			<TableLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<TableRow android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="Date : "></TextView>
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:orientation="horizontal">
+						<Button android:id="@+id/pickDate" android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/date_widgets_example_pickDate_text" />
+						<Button android:id="@+id/pickTime" android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/date_widgets_example_pickTime_text" />
+					</LinearLayout>
+				</TableRow>
+				<TableRow android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+					<TextView android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" android:text="Depth: "></TextView>
+					<EditText android:id="@+id/newdive_depth" android:digits="0123456789." android:inputType="number"
+						android:layout_width="fill_parent" android:layout_height="wrap_content" />
+				</TableRow>
+				<TableRow android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="Duration: "></TextView>
+					<EditText android:id="@+id/newdive_duration" android:digits="0123456789." android:inputType="number"
+						android:layout_width="fill_parent" android:layout_height="wrap_content" />
+				</TableRow>
+				<TableRow android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="Temperature:"></TextView>
+					<EditText android:id="@+id/newdive_temperature" android:digits="0123456789." android:inputType="number"
+						android:layout_width="fill_parent" android:layout_height="wrap_content" />
+				</TableRow>
+				<TableRow android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="notes:"></TextView>
+					<EditText android:id="@+id/newdive_notes" 
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:height="150sp" android:width="200px" />
+
+				</TableRow>
+			</TableLayout>
+			<Button android:id="@+id/newdive_save" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/newdive_save"
+				android:width="300px" />
+		</LinearLayout>
+
+	</ScrollView>
+</LinearLayout>

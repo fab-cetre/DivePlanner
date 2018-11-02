@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- list -->
+
+	<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+		<CheckBox
+			android:id="@+id/oc_bailout_checkbox"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:checked="true" />
+	
+	<TextView 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_weight="2"
+	android:text="@string/oc_bailout_checkbox_text"
+	/>
+	
+	
+</LinearLayout>
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@android:drawable/divider_horizontal_dark"
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:scaleType="fitXY"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingBottom="0dp"
+    android:paddingTop="0dp"
+    android:contentDescription="separator"/>
+
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Gases :"
+    android:textAppearance="@style/Label" />
+
+    <ListView
+        android:id="@+id/gas_list_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/gas_list_add"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/button_add_gas" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+  <resources>
+        <string-array name="units_text">
+            <item>Metric</item>
+            <item>Imperial</item>
+        </string-array>
+           <string-array name="units_id">
+            <item>0</item>
+            <item>1</item>
+        </string-array>
+           <string-array name="vType">
+               <item >Detailed</item>
+               <item >Brief</item>
+           </string-array>
+           <integer-array name="vTypeValue">
+               <item >1</item>
+               <item >0</item>
+           </integer-array>
+           <string-array name="model_text">
+               <item >ZHL16B</item>
+               <item >ZHL16C</item>
+           </string-array>
+           <string-array name="model_value">
+               <item >ZHL16B</item>
+               <item >ZHL16C</item>
+           </string-array>
+    </resources>

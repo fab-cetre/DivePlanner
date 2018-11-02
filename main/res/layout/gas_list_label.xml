@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<CheckBox
+	android:id="@+id/gas_list_label_check_box"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	/>
+	
+	<TextView 
+	android:id="@+id/gas_list_label_text"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_weight="2"
+	android:text="ttt"
+	/>
+	<ImageButton
+	android:src="@drawable/pencil"
+	android:id="@+id/gas_list_label_edit"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Edit" 
+	 />
+	 <ImageButton
+	android:src="@drawable/trash"
+	android:id="@+id/gas_list_label_delete"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Edit" 
+	 />
+</LinearLayout>
