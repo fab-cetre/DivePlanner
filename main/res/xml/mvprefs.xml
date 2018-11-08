@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
     
-    <EditTextPreference  android:title="Last stop"
-        				android:dialogMessage="Value between 1 - 10"
-                        android:summary="Depth of your last deco stop"
+    <EditTextPreference  android:title="@string/mvprefs_laststop_title"
+        				android:dialogMessage="@string/mvprefs_laststop_dial"
+                        android:summary="@string/mvprefs_laststop_sum"
                         android:key="lastStopDepth"/>
     <ListPreference
-                        android:title="Units"
-                        android:summary="Change units between metric and imperial"
+                        android:title="@string/mvprefs_units_title"
+                        android:summary="@string/mvprefs_units_sum"
                         android:key="units"
                         android:defaultValue="0"
                         android:entries="@array/units_text"
                         android:entryValues="@array/units_id" />
-    <PreferenceCategory android:title="Gradient Factors">
-        <EditTextPreference  android:title="GF Low"
+    <PreferenceCategory android:title="@string/mvprefs_gradientfactor_title">
+        <EditTextPreference  android:title="@string/mvprefs_gradientfactorlow_title"
         				android:defaultValue="85"
-        				android:dialogMessage="Value between 0 - 95 and no greater than gf high"
-                        android:summary="Low value of gradient factor"
+        				android:dialogMessage="@string/mvprefs_gradientfactorlow_dial"
+                        android:summary="@string/mvprefs_gradientfactorlow_sum"
                         android:key="gfLow"/>
-        <EditTextPreference  android:title="High"
+        <EditTextPreference  android:title="@string/mvprefs_gradientfactorhigh_title"
         				android:defaultValue="85"
-        				android:dialogMessage="Value between 0 - 95 and greater than gf low"
-                        android:summary="High value of gradient factor"
+        				android:dialogMessage="@string/mvprefs_gradientfactorhigh_dial"
+                        android:summary="@string/mvprefs_gradientfactorhigh_sum"
                         android:key="gfHigh"/>
         
     </PreferenceCategory>
-    <PreferenceCategory android:title="RVM" >
-        <EditTextPreference  android:title="Dive"
+    <PreferenceCategory android:title="@string/mvprefs_conso_title" >
+        <EditTextPreference  android:title="@string/mvprefs_consodive_title"
         				android:defaultValue="20"
-        				android:dialogMessage="Value between 0 - 100"
-                        android:summary="Respiratory Minute Volume for dive"
+        				android:dialogMessage="@string/mvprefs_conso_dial"
+                        android:summary="@string/mvprefs_consodive_sum"
                         android:key="diveRVM"/>
-        <EditTextPreference  android:title="Deco"
+        <EditTextPreference  android:title="@string/mvprefs_consodeco_title"
         				android:defaultValue="16"
-        				android:dialogMessage="Value between 0 - 100"
-                        android:summary="Respiratory Minute Volume for decompression"
+        				android:dialogMessage="@string/mvprefs_conso_dial"
+                        android:summary="@string/mvprefs_consodeco_sum"
                         android:key="decoRVM"/>
         
     </PreferenceCategory>
-    <PreferenceCategory android:title="Parameters">
-        <CheckBoxPreference android:key="vType" android:summaryOn="Detailed" android:summaryOff="Brief" android:defaultValue="0" android:title="Detailed View"/>
-        <EditTextPreference android:defaultValue="0" android:key="setPoint" android:title="Default setPoint"/>
+    <PreferenceCategory android:title="@string/mvprefs_param_title">
+        <CheckBoxPreference android:key="vType" android:summaryOn="@string/mvprefs_detail_on" android:summaryOff="@string/mvprefs_detail_on" android:defaultValue="0" android:title="@string/mvprefs_detail_on"/>
+        <EditTextPreference android:defaultValue="0" android:key="setPoint" android:title="@string/mvprefs_setpoint_title"/>
     </PreferenceCategory>
-    <PreferenceCategory android:title="Constraints">
-        <EditTextPreference android:defaultValue="20" android:key="descentRate" android:title="Descent rate"/>
-        <EditTextPreference android:defaultValue="10" android:key="ascentRate" android:title="Ascent Rate"/>
-        <EditTextPreference android:defaultValue="0" android:key="altitude" android:title="Altitude"/>
-        <ListPreference android:entries="@array/model_text" android:entryValues="@array/model_value" android:key="model" android:title="Decompression Model" android:defaultValue="ZHL16B" android:summary="Choose your model"/>
-        <CheckBoxPreference android:defaultValue="0" android:key="multilevel" android:title="Multi level" android:summaryOff="SquareDive" android:summaryOn="MultiLevel"/>
+    <PreferenceCategory android:title="@string/mvprefs_constraints_title">
+        <EditTextPreference android:defaultValue="20" android:key="descentRate" android:title="@string/mvprefs_descent_title"/>
+        <EditTextPreference android:defaultValue="10" android:key="ascentRate" android:title="@string/mvprefs_ascent_title"/>
+        <EditTextPreference android:defaultValue="0" android:key="altitude" android:title="@string/mvprefs_altitude_title"/>
+        <ListPreference android:entries="@array/model_text" android:entryValues="@array/model_value" android:key="model" android:title="@string/mvprefs_modele_title" android:defaultValue="ZHL16B" android:summary="@string/mvprefs_modele_sum"/>
+        <CheckBoxPreference android:defaultValue="0" android:key="multilevel" android:title="@string/mvprefs_multilevel_title" android:summaryOff="@string/mvprefs_multilevel_sumoff" android:summaryOn="@string/mvprefs_multilevel_sumon"/>
     </PreferenceCategory>
     
 
